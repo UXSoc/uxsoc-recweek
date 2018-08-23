@@ -49,3 +49,12 @@ $border-gray2: #828282;
 body {
   @include proximanova;
 }
+.hero-image {
+  padding-top: 28px;
+  width: 100%;
+  max-width: 1300px;
+}
+.hero-title {
+  letter-spacing: 0.1rem;
+  padding-bottom: 0.7rem;
+}
