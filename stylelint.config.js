@@ -9,7 +9,7 @@ module.exports = {
     'selector-pseudo-class-no-unknown': true,
     'selector-pseudo-element-no-unknown': true,
     'media-feature-name-no-unknown': true,
-    'at-rule-no-unknown': true,
+    'at-rule-no-unknown': null,
     'comment-no-empty': true,
     'no-duplicate-at-import-rules': true,
     'no-extra-semicolons': true,
