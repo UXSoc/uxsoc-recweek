@@ -30,22 +30,22 @@ $border-gray2: #828282;
 }
 
 .pn-sb {
-  @include proximanova-semibold
+  @include proximanova-semibold;
 }
 .pn-th {
-  @include proximanova-thin
+  @include proximanova-thin;
 }
 .pn {
-  @include proximanova
+  @include proximanova;
 }
 .pn-bl {
-  @include proximanova-black
+  @include proximanova-black;
 }
 .rubik {
-  @include rubik
+  @include rubik;
 }
 
 @import '~bulma/bulma.sass';
 body {
-  @include proximanova
+  @include proximanova;
 }
