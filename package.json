@@ -6,7 +6,8 @@
   "author": "Margarita Obraztsova <marharyta.obraztsova@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_ENV=development webpack-dev-server --mode=development --hot"
+    "dev": "NODE_ENV=development webpack-dev-server --mode=development --hot",
+    "build": "NODE_ENV=production webpack --mode=production"
   },
   "dependencies": {
     "autoprefixer": "^8.6.3",
@@ -33,5 +34,9 @@
     "webpack-dev-server": "^3.1.4",
     "webpack-md5-hash": "^0.0.6",
     "yarn": "^1.7.0"
+  },
+  "devDependencies": {
+    "bulma": "^0.7.1",
+    "copy-webpack-plugin": "^4.5.2"
   }
 }
