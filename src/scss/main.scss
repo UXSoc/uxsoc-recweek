@@ -1,3 +1,51 @@
 @import '~bulma/sass/utilities/initial-variables.sass';
 @import '~bulma/sass/utilities/functions.sass';
+
+$uxsoc-blue: #008ed4;
+$uxsoc-offwhite: #EEF1F6;
+$subtitle-color: #B3BCC4;
+$title-color: #20252B;
+$border-gray: #bdbdbd;
+$border-gray2: #828282;
+@mixin proximanova-semibold {
+  font-family: 'proxima_nova_ltsemibold', Georgia, sans-serif;
+}
+@mixin proximanova-thin {
+  font-family: 'proxima_nova_ltthin', Georgia, sans-serif;
+}
+@mixin proximanova {
+  font-family: 'Proxima Nova', Georgia, sans-serif;
+}
+@mixin proximanova-bold {
+  font-family: 'proxima_nova_altbold', Georgia, sans-serif;
+}
+@mixin proximanova-black {
+  font-family: 'proxima_nova_altblack', Georgia, sans-serif;
+}
+@mixin rubik {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.pn-sb {
+  @include proximanova-semibold
+}
+.pn-th {
+  @include proximanova-thin
+}
+.pn {
+  @include proximanova
+}
+.pn-bl {
+  @include proximanova-black
+}
+.rubik {
+  @include rubik
+}
+
 @import '~bulma/bulma.sass';
+body {
+  @include proximanova
+}
