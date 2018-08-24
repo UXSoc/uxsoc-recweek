@@ -53,11 +53,19 @@ $family-sans-serif: 'Proxima Nova', Georgia, sans-serif;
   width: 100%;
   max-width: 1300px;
 }
+.ux-image {
+  width: 100%;
+  max-width: 25rem;
+}
+.rec-image {
+  width: 100%;
+  max-width: 25rem;
+}
 .vm-image {
   padding-top: 28px;
   padding-bottom: 28px;
   width: 100%;
-  max-width: 1000px;
+  max-width: 50rem;
 }
 .hero-title {
   letter-spacing: 0.1rem;
