@@ -2,6 +2,7 @@
   <head>
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
     <link rel="stylesheet" href="/fonts/fonts.min.css">
+    <script src="/smooth-scroll.polyfills.min.js"></script>
   </head>
   <body>
     <div id="fb-root"></div>
@@ -12,33 +13,38 @@
       js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1&appId=1048919171892460&autoLogAppEvents=1';
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar">
       <div class="navbar-brand">
-        <a class="navbar-item" href="https://admu.uxsociety.org">
-          <img src="/img/uxsoc_logo_full.png" alt="UXSoc Logo"/>
+        <a class="navbar-item" href="http://admu.uxsociety.org">
+          <img src="/img/uxslogo_blue.png" alt="UXSoc Recweek 2018">
+          <h1 class="title is-5 pn-sb" style="margin-left: 7px;">Recweek 2018</h1>
         </a>
-        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
+        <div class="navbar-burger burger" data-target="navMenubd-example">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-      <div class="navbar-menu">
+      <div id="navMenubd-example" class="navbar-menu">
         <div class="navbar-end">
-          <a class="navbar-item">
+          <a class="navbar-item" data-scroll href="#about">
             About Us
           </a>
-          <a class="navbar-item">
+          <a class="navbar-item" data-scroll href="#vals">
             Core Values
           </a>
-          <a class="navbar-item">
+          <a class="navbar-item" data-scroll href="#recruit">
             Recruitment
           </a>
-          <a class="navbar-item">
-            JOIN US
-          </a>
-          <!--<a class="btn -uxsoc text-center" href="#" role="button">JOIN US</a>-->
+          <div class="navbar-item">
+            <div class="field is-grouped">
+              <p class="control">
+              <a class="button is-primary" data-scroll href="#joinus">
+                JOIN US
+              </a>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -53,7 +59,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="about">
       <div class="container">
         <div class="columns is-desktop is-vcentered">
           <div class="column">
@@ -82,7 +88,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="vals">
       <div class="container">
         <h1 class="title is-1 has-text-centered">Our Core Values</h1>
         <div class="columns is-vcentered is-desktop reverse-column-order">
@@ -133,7 +139,7 @@
       </div>
     </section>
 
-    <section class="section has-background-grey-dark">
+    <section class="section has-background-grey-dark" id="recruit">
       <div class="container has-text-white">
         <h1 class="title is-1 has-text-centered has-text-white">Who are we looking for?</h1>
         <h3 class="subtitle is-3 has-text-centered has-text-white">Students who are interested in...</h3>
@@ -157,7 +163,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="joinus">
       <div class="container">
         <h1 class="title is-1 has-text-centered">What are you waiting for?</h1>
         <h3 class="subtitle is-3 has-text-centered">Visit our booth in Colayco Pavilion and join us this August 28, 2018</h3>
@@ -177,6 +183,9 @@
     </section>
 
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
   </body>
 
 </html>
