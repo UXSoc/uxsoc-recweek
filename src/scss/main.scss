@@ -7,6 +7,7 @@ $subtitle-color: #B3BCC4;
 $title-color: #20252B;
 $border-gray: #bdbdbd;
 $border-gray2: #828282;
+$family-sans-serif: 'Proxima Nova', Georgia, sans-serif;
 @mixin proximanova-semibold {
   font-family: 'proxima_nova_ltsemibold', Georgia, sans-serif;
 }
@@ -46,15 +47,24 @@ $border-gray2: #828282;
 }
 
 @import '~bulma/bulma.sass';
-body {
-  @include proximanova;
-}
 .hero-image {
   padding-top: 28px;
   width: 100%;
   max-width: 1300px;
 }
+.vm-image {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  width: 100%;
+  max-width: 1000px;
+}
 .hero-title {
   letter-spacing: 0.1rem;
   padding-bottom: 0.7rem;
+}
+@media screen and (max-width: 1087px) {
+  .reverse-column-order {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
