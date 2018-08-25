@@ -1,6 +1,10 @@
 @import '~bulma/sass/utilities/initial-variables.sass';
 @import '~bulma/sass/utilities/functions.sass';
 
+$fa-font-path: '../assets/webfonts';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+
 $uxsoc-blue: #008ed4;
 $primary: #008ed4;
 $uxsoc-offwhite: #EEF1F6;
