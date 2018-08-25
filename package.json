@@ -36,11 +36,8 @@
     "yarn": "^1.7.0"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.2.0",
     "animate.css": "^3.7.0",
     "bulma": "^0.7.1",
-    "copy-webpack-plugin": "^4.5.2",
-    "file-loader": "^2.0.0",
-    "url-loader": "^1.1.1"
+    "copy-webpack-plugin": "^4.5.2"
   }
 }
