@@ -85,3 +85,27 @@ $family-sans-serif: 'Proxima Nova', Georgia, sans-serif;
     flex-direction: column-reverse;
   }
 }
+
+.navbar-brand {
+  padding: 1rem;
+}
+
+.slack-box {
+  text-align: center;
+}
+
+.slack-icon {
+  height: 2.5rem;
+  padding-right: 5px;
+}
+.inline {
+  display: inline-block;
+}
+
+.slack-link {
+  color: $primary;
+}
+
+.slack-link:hover {
+  text-decoration: underline;
+}
